@@ -1,0 +1,36 @@
+body{
+    margin: auto;
+    font-size: 0.7em;
+}
+
+h1{
+    border-radius: 25px 10px;
+}
+
+table{
+    text-align: center;
+    font-size: 16px;
+    margin-left: 2%; 
+    border: 2px solid #ccc;
+    border-collapse: separate;
+    border-spacing: 10px;
+    caption-side: top;
+}
+table1{
+    margin-left: 2%;
+    font-size: 16px;
+    border-bottom: 2px solid blue;
+}
+table2{
+    margin-left: 2%;
+    font-size: 16px;
+}
+th{
+    text-align: left;
+}
+
+tr,td{
+    padding: 3px 1px;
+    border: 1px solid #ccc;
+    width: 60px;
+}

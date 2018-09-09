@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+
+table{
+    width: 60%;
+    margin: auto;
+    font-bottom: 1.5em;
+}
+
+th{
+    border-bottom: 1.5px solid red;
+}
+
+td{
+    border-bottom: 1px dotted blue;
+}

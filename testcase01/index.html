@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TestCase01</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <br>
+    <h1> 1. 如果是 2/21/2018，要怎麼把年份丟掉?(請測試 2/21/2018、2/1/2018、12/1/2018、10/10/2018)</h1>
+    <table>
+        <tbody>
+            <tr id="date">
+                <th>日期: </th>
+                <td>2/21/2018</td>
+                <td>2/1/2018</td>
+                <td>12/1/2018</td>
+                <td>10/10/2018</td>
+            </tr>
+            <tr id="fixedDate">
+                <th>刪除年份: </th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h1> 2. 運用HTML5 Date Picker元件、文字輸入元件，讓使用者從前端去設定活動開始日期、各週活動主題?</h1>
+    <table>
+        <th>活動主題: <input type="text" name="topic" id="topic"></th><br>
+        <th>活動日期: <input type="text" name="date" id="datepicker"></th>
+        <th><input type="button" name="submit" value="新增" onclick="processFormData();"></th>
+    </table><br>
+    <table2 id="courseTable"></table2><br>
+    <h1> 3. 如何調整表格內文字到邊框的距離?</h1>
+    <table>
+        <th>css: padding 3px 3px;</th> 
+    </table>
+    <br>
+    <h1> 4. 如果要偶數列樣式不同該怎麼設定？( class, id, td.even{  ..... } )</h1>
+</body>
+</html>

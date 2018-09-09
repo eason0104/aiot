@@ -1,0 +1,5 @@
+"wslintConfig": {
+    "globals": {
+        "window": true
+    }
+}
