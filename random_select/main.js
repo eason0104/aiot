@@ -43,12 +43,12 @@ var food_img=[
     "img/food07.jpg",
     "img/food08.jpg",
     "img/food09.jpg",
-    "img/food10.jpeg",
+    "img/food10.jpg",
     "img/food11.jpg",
     "img/food12.jpg",
-    "img/food13.jpeg",
+    "img/food13.jpg",
     "img/food14.jpg",
-    "img/food15.jpeg",
+    "img/food15.jpg",
     "img/food16.jpg",
     "img/food17.jpg",
     "img/food18.jpg",
@@ -62,6 +62,6 @@ function foodname(){
     //console.log(randomchildnumber);
     $("H4").text(food[randomchildnumber]);
     console.log(food_img[randomchildnumber]);
-    //$("foodpicture").append($('food_img[randomchildnumber]'));
-    $('H4').attr('src', "img/food01.jpg");
+    //$('#aa').append(food_img[randomchildnumber]);
+    $('#aa').attr('src', food_img[randomchildnumber]);
 };

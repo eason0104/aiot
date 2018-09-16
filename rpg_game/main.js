@@ -3,7 +3,7 @@ var imgMountain, imgMain, imgEnemy;
 
 $(document).ready(function() {
     //0:可走; 1:障礙; 2:終點; 3:敵人; 4:門; 5:鑰匙; 6:開門
-    mapArray = [0,1,5,0,0,0,3,1,4];
+    mapArray = [0,1,1,0,0,0,3,1,2];
     ctx = $("#myCanvas")[0].getContext("2d");
     
     imgMain = new Image();
@@ -90,15 +90,15 @@ $(document).keydown(function(event) {
         currentImagMainY=targetImgMainY;
     }
     
-    if(mapArray[targetBlock]==5) {
+    /*if(mapArray[targetBlock]==2) {
         ctx.clearRect(currentImgMainX, currentImagMainY,200,200);
         var key = 1;
         console.log(key);
     }
     
-    if(mapArray[targetBlock]==4 & key==1){
+    if(mapArray[targetBlock]==8 & key==1){
         ctx.clearRect(currentImgMainX, currentImagMainY,200,200);    
-    }
+    }*/
         ctx.drawImage(imgMain,cutImagePositionX,0,80,130,currentImgMainX,currentImagMainY,200,200);
 
     switch(mapArray[targetBlock])

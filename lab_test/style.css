@@ -1,0 +1,104 @@
+#background{
+    position:relative;
+    z-index:-1;
+}
+
+#sun{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    top:20px;
+    left:100px;
+    border: 2px solid lightyellow;
+    box-shadow: 10px 10px 50px lightyellow;
+    transition: 3s;
+    z-index:0;
+}
+#sun:hover{
+    background-image: url(images/sun.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 240px;
+}
+
+#cow{
+    position:absolute;
+    background-image: url('images/cow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 500px;
+    top: 490px;
+    left: 20px;
+    z-index:0;
+}
+
+#tower{
+    position:absolute;
+    background-image: url(images/lookout_tower.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    top: 85px;
+    right: 20px;
+    z-index:2;
+}
+
+#rail{
+    position:absolute;
+    width: 600px;
+    height: 400px;
+    top: 500px;
+    left: 20px;
+    z-index:2;
+}
+
+#windmill{
+    position:absolute;
+    width: 400px;
+    height: 390px;
+    top: 0px;
+    right: 70px;
+    animation: mill 30s linear infinite;
+    z-index:3;
+}
+
+#bird{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    left: 0px;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    z-index:1;
+}
+@keyframes example {
+    0%   {left:0px; top:200px;}
+    10%  {left:150px; top:100px;}
+    20%  {left:300px; top:200px;}
+    30%  {left:450px; top:100px;}
+    40%  {left:600px; top:200px;}
+    50%  {left:750px; top:100px;}
+    60%  {left:900px; top:200px;}
+    70%  {left:1050px; top:100px;}
+    80%  {left:1080px; top:200px;}
+    90%  {left:1100px; top:100px;}
+    100% {left:1150px; top:200px;}
+
+}
+
+@keyframes mill
+0%
+{
+    transform: rotateX(0deg);
+}
+100%
+{
+    transform: rotateX(360deg);
+}
